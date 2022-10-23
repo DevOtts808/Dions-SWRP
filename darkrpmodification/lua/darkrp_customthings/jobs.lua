@@ -226,7 +226,10 @@ _212TH_MEDIC = DarkRP.createJob("212th Medic", {
 
 GHOST_NCO = DarkRP.createJob("212th Ghost NCO", {
     color = Color(238, 161, 27),
-    model = "models/aussiwozzi/cgi/base/212th_ghost_company.mdl",
+    model = {
+        "models/aussiwozzi/cgi/base/212th_ghost_company.mdl",
+        "models/aussiwozzi/cgi/base/212th_barc.mdl"
+    },
     description = [[
         Moving up in the ranks! A more experienced Non Commission Officer in the 212th attack battalion
     ]],
@@ -257,7 +260,10 @@ GHOST_NCO = DarkRP.createJob("212th Ghost NCO", {
 
 GHOST_OF = DarkRP.createJob("212th Ghost Officer", {
     color = Color(238, 161, 27),
-    model = "models/aussiwozzi/cgi/base/212th_ghost_officer.mdl",
+    model = {
+        "models/aussiwozzi/cgi/base/212th_ghost_officer.mdl",
+        "models/aussiwozzi/cgi/base/212th_barc.mdl"
+    },
     description = [[
         A high ranking member of the 212th attack battalion. 
     ]],
@@ -289,7 +295,10 @@ GHOST_OF = DarkRP.createJob("212th Ghost Officer", {
 
 GHOST_MJR = DarkRP.createJob("212th Ghost Major", {
     color = Color(238, 161, 27),
-    model = "models/aussiwozzi/cgi/base/212th_arc.mdl",
+    model = {
+        "models/aussiwozzi/cgi/base/212th_arc.mdl",
+        "models/aussiwozzi/cgi/base/212th_barc.mdl"
+    },
     description = [[
         The Major of the 212th attack battalion. 
     ]],
@@ -601,7 +610,7 @@ HVY_NCO = DarkRP.createJob("501st Heavy NCO", {
 
 HVY_OF = DarkRP.createJob("501st Heavy Officer", {
     color = Color(67, 83, 255),
-    model = "models/aussiwozzi/cgi/base/501st_officer.mdl",
+    model = "models/aussiwozzi/cgi/base/501st_torrent_officer.mdl",
     description = [[
         A high ranking heavy trooper in the 501st legion.
     ]],
@@ -1145,7 +1154,7 @@ AC_SG = DarkRP.createJob("Supreme General", {
 -- Fleet jobs for update here ------------------------------------------------------------------------------------------------------------
 
 FLT_ = DarkRP.createJob("Fleet 1", {
-    color = Color(75, 0, 0),
+    color = Color(25, 25, 112),
     model = {
         "models/jajoff/sps/republic/tc13j/navy_02.mdl", 
     },
@@ -1173,7 +1182,7 @@ FLT_ = DarkRP.createJob("Fleet 1", {
 })
 
 FLT_ = DarkRP.createJob("Fleet 2", {
-    color = Color(75, 0, 0),
+    color = Color(25, 25, 112),
     model = {
         "models/jajoff/sps/republic/tc13j/navy_01.mdl", 
     },
@@ -1201,7 +1210,7 @@ FLT_ = DarkRP.createJob("Fleet 2", {
 })
 
 FLT_ = DarkRP.createJob("Fleet 3", {
-    color = Color(75, 0, 0),
+    color = Color(25, 25, 112),
     model = {
         "models/jajoff/sps/republic/tc13j/navy_03.mdl", 
     },
@@ -1229,7 +1238,7 @@ FLT_ = DarkRP.createJob("Fleet 3", {
 })
 
 FLT_ = DarkRP.createJob("Fleet 4", {
-    color = Color(75, 0, 0),
+    color = Color(25, 25, 112),
     model = {
         "models/jajoff/sps/republic/tc13j/navy_04.mdl", 
     },
@@ -1257,7 +1266,7 @@ FLT_ = DarkRP.createJob("Fleet 4", {
 })
 
 FLT_ = DarkRP.createJob("Fleet 4", {
-    color = Color(75, 0, 0),
+    color = Color(25, 25, 112),
     model = {
         "models/jajoff/sps/republic/tc13j/navy_04.mdl", 
     },
@@ -1285,7 +1294,7 @@ FLT_ = DarkRP.createJob("Fleet 4", {
 })
 
 FLT_ = DarkRP.createJob("Fleet 5", {
-    color = Color(75, 0, 0),
+    color = Color(25, 25, 112),
     model = {
         "models/jajoff/sps/republic/tc13j/army_03.mdl", 
     },

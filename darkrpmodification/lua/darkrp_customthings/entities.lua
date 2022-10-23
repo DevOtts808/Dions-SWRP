@@ -70,7 +70,6 @@ DarkRP.createEntity("ARC-170", {
     },
     category = "Air Vehicles",
 })
-
 DarkRP.createEntity("NBT-630", {
     ent = "lunasflightschool_nbt630",
     cmd = "buyNBT",
@@ -88,7 +87,6 @@ DarkRP.createEntity("NBT-630", {
     },
     category = "Air Vehicles",
 })
-
 DarkRP.createEntity("TX130", {
     ent = "lunasflightschool_iftx",
     cmd = "buyTX",
@@ -150,6 +148,22 @@ DarkRP.createEntity("BARC speeder", {
         GHOST_OF,
         GHOST_NCO
         
+    },
+    category = "Ground Vehicles",
+})
+DarkRP.createEntity("AT-RT", {
+    ent = "lunasflightschool_niksacokica_at-rt",
+    cmd = "buyATRT",
+    model = "models/kingpommes/starwars/atrt/main.mdl",
+    price = 500,
+    max = 1,
+    sortOrder = 6,
+    allowed = {
+        HVY_NCO,
+        HVY_OF,
+        _501ST_MJR,
+        _501ST_EXO,
+        _501ST_CO
     },
     category = "Ground Vehicles",
 })

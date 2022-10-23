@@ -56,13 +56,19 @@ DarkRP.createCategory {
     color = Color(75, 0, 0),
     sortOrder = 7,
 }
-
+DarkRP.createCategory {
+    name = "Fleet",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(25, 25, 112),
+    sortOrder = 8,
+}
 DarkRP.createCategory {
     name = "CIS",
     categorises = "jobs",
     startExpanded = false,
     color = Color(195, 9, 9),
-    sortOrder = 8,
+    sortOrder = 9,
 }
 DarkRP.createCategory {
     name = "Air Vehicles",

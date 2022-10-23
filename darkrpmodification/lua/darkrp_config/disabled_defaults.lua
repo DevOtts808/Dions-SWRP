@@ -24,12 +24,12 @@ In these few cases it will be pretty obvious when you expect something to happen
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["modules"] = {
     ["afk"]              = true,
-    ["chatsounds"]       = false,
+    ["chatsounds"]       = true,
     ["events"]           = false,
     ["fpp"]              = false,
-    ["f1menu"]           = false,
+    ["f1menu"]           = true,
     ["f4menu"]           = false,
-    ["hitmenu"]          = false,
+    ["hitmenu"]          = true,
     ["hud"]              = false,
     ["hungermod"]        = true,
     ["playerscale"]      = false,
@@ -117,8 +117,8 @@ DarkRP.disabledDefaults["food"] = {
 Door groups
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["doorgroups"] = {
-    ["Cops and Mayor only"] = false,
-    ["Gundealer only"]      = false,
+    ["Cops and Mayor only"] = true,
+    ["Gundealer only"]      = true,
 }
 
 
