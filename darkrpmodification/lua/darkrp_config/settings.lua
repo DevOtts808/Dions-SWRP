@@ -44,13 +44,13 @@ GM.Config.babygod                       = true
 -- canforcedooropen - whether players can force an unownable door open with lockpick or battering ram or w/e.
 GM.Config.canforcedooropen              = true
 -- chatsounds - sounds are played when some things are said in chat.
-GM.Config.chatsounds                    = true
+GM.Config.chatsounds                    = false
 -- chiefjailpos - Allow the Chief to set the jail positions.
-GM.Config.chiefjailpos                  = true
+GM.Config.chiefjailpos                  = false
 -- cit_propertytax - Enable/disable property tax that is exclusive only for citizens.
 GM.Config.cit_propertytax               = false
 -- copscanunfreeze - Enable/disable the ability of cops to unfreeze other people's props.
-GM.Config.copscanunfreeze               = true
+GM.Config.copscanunfreeze               = false
 -- copscanunweld - Enable/disable the ability of cops to unweld other people's props.
 GM.Config.copscanunweld                 = false
 -- cpcanarrestcp - Allow/Disallow CPs to arrest other CPs.
@@ -110,7 +110,7 @@ GM.Config.lockdown                      = true
 -- lockpickfading - Enable/disable the lockpicking of fading doors.
 GM.Config.lockpickfading                = true
 -- logging - Enable/disable logging everything that happens.
-GM.Config.logging                       = true
+GM.Config.logging                       = false
 -- lottery - Enable/disable creating lotteries for mayors.
 GM.Config.lottery                       = true
 -- showname - Whether or not to display a player's name above their head in-game.
@@ -126,7 +126,7 @@ GM.Config.norespawn                     = true
 -- instantjob - Enable/Disable instantly respawning when norespawn is false
 GM.Config.instantjob                    = false
 -- npcarrest - Enable/disable arresting npc's.
-GM.Config.npcarrest                     = true
+GM.Config.npcarrest                     = false
 -- ooc - Whether or not OOC tags are enabled.
 GM.Config.ooc                           = true
 -- propertytax - Enable/disable property tax.
@@ -180,9 +180,9 @@ GM.Config.weaponCheckerHideNoLicense    = false
 Value settings
 ]]
 -- adminnpcs - Whether or not NPCs should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
-GM.Config.adminnpcs                     = 1
+GM.Config.adminnpcs                     = 0
 -- adminsents - Whether or not SENTs should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
-GM.Config.adminsents                    = 1
+GM.Config.adminsents                    = 0
 -- adminvehicles - Whether or not vehicles should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
 GM.Config.adminvehicles                 = 1
 -- adminweapons - Who can spawn weapons: 0: admins only, 1: supadmins only, 2: no one, 3: everyone
@@ -207,7 +207,7 @@ GM.Config.entremovedelay                = 0
 -- gunlabweapon - The weapon that the gunlab spawns.
 GM.Config.gunlabweapon                  = "weapon_p2282"
 -- jailtimer - Sets the jailtimer (in seconds).
-GM.Config.jailtimer                     = 120
+GM.Config.jailtimer                     = 300
 -- lockdowndelay - The amount of time a mayor must wait before starting the next lockdown.
 GM.Config.lockdowndelay                 = 120
 -- maxadvertbillboards - The maximum number of /advert billboards a player can place.
@@ -255,7 +255,7 @@ GM.Config.propcost                      = 10
 -- quakechance - Chance of an earthquake happening.
 GM.Config.quakechance                   = 4000
 -- respawntime - Minimum amount of seconds a player has to wait before respawning.
-GM.Config.respawntime                   = 1
+GM.Config.respawntime                   = 10
 -- changejobtime - Minimum amount of seconds a player has to wait before changing job.
 GM.Config.changejobtime                 = 1
 -- runspeed - Sets the max running speed.
@@ -269,7 +269,7 @@ GM.Config.ShipmentSpamTime              = 3
 -- shipmenttime - The number of seconds it takes for a shipment to spawn.
 GM.Config.shipmentspawntime             = 10
 -- startinghealth - the health when you spawn.
-GM.Config.startinghealth                = 100
+GM.Config.startinghealth                = 200
 -- startingmoney - your wallet when you join for the first time.
 GM.Config.startingmoney                 = 500
 -- stunstickdamage - amount of damage the stunstick will do to entities.
@@ -285,7 +285,7 @@ GM.Config.wallettaxmin                  = 1
 -- wallettaxtime - Time in seconds between taxing players. Requires server restart.
 GM.Config.wallettaxtime                 = 600
 -- wantedtime - Number of seconds for which a player is wanted for.
-GM.Config.wantedtime                    = 120
+GM.Config.wantedtime                    = 300
 -- walkspeed - Sets the max walking speed.
 GM.Config.walkspeed                     = 160
 -- falldamagedamper - The damper on realistic fall damage. Default is 15. Decrease this for more damage.
