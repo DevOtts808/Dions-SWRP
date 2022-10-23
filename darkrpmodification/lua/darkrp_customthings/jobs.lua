@@ -1074,7 +1074,7 @@ CG_CO = DarkRP.createJob("CG Commander Fox", {
     end,
 })
 
-AC_MCO = DarkRP.createJob("Marshal Commander", {
+AC_BG = DarkRP.createJob("Marshal Commander", {
     color = Color(75, 0, 0),
     model = {
         "models/aussiwozzi/cgi/base/rhc_2.mdl",
@@ -1112,7 +1112,7 @@ AC_MCO = DarkRP.createJob("Marshal Commander", {
     end,
 })
 
-AC_BG = DarkRP.createJob("Battalion General", {
+AC_SG = DarkRP.createJob("Battalion General", {
     color = Color(75, 0, 0),
     model = {
         "models/aussiwozzi/cgi/base/rhc_1.mdl", 
