@@ -1301,6 +1301,8 @@ CIS_TAC = DarkRP.createJob("CIS Tactical droid", {
         ply:SetMaxHealth(3000)
     end,
 })
+
+hehe cool edit :)
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
