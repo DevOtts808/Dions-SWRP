@@ -1142,6 +1142,181 @@ AC_SG = DarkRP.createJob("Supreme General", {
     end,
 })
 
+-- Fleet jobs for update here ------------------------------------------------------------------------------------------------------------
+
+FLT_ = DarkRP.createJob("Fleet 1", {
+    color = Color(75, 0, 0),
+    model = {
+        "models/jajoff/sps/republic/tc13j/navy_02.mdl", 
+    },
+    description = [[
+        First fleet rank.
+    ]],
+    weapons = {
+
+    },
+    command = "Fleet1",
+    max = 1,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    sortOrder = 1,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+FLT_ = DarkRP.createJob("Fleet 2", {
+    color = Color(75, 0, 0),
+    model = {
+        "models/jajoff/sps/republic/tc13j/navy_01.mdl", 
+    },
+    description = [[
+        Second fleet rank.
+    ]],
+    weapons = {
+
+    },
+    command = "Fleet2",
+    max = 1,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    sortOrder = 2,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+FLT_ = DarkRP.createJob("Fleet 3", {
+    color = Color(75, 0, 0),
+    model = {
+        "models/jajoff/sps/republic/tc13j/navy_03.mdl", 
+    },
+    description = [[
+        Third fleet rank.
+    ]],
+    weapons = {
+
+    },
+    command = "Fleet3",
+    max = 1,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    sortOrder = 3,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+FLT_ = DarkRP.createJob("Fleet 4", {
+    color = Color(75, 0, 0),
+    model = {
+        "models/jajoff/sps/republic/tc13j/navy_04.mdl", 
+    },
+    description = [[
+        Fourth fleet rank.
+    ]],
+    weapons = {
+
+    },
+    command = "Fleet4",
+    max = 1,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+FLT_ = DarkRP.createJob("Fleet 4", {
+    color = Color(75, 0, 0),
+    model = {
+        "models/jajoff/sps/republic/tc13j/navy_04.mdl", 
+    },
+    description = [[
+        Fourth fleet rank.
+    ]],
+    weapons = {
+
+    },
+    command = "Fleet4",
+    max = 1,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+FLT_ = DarkRP.createJob("Fleet 5", {
+    color = Color(75, 0, 0),
+    model = {
+        "models/jajoff/sps/republic/tc13j/army_03.mdl", 
+    },
+    description = [[
+        Fifth fleet rank.
+    ]],
+    weapons = {
+
+    },
+    command = "Fleet5",
+    max = 1,
+    salary = 70,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Fleet",
+    canDemote = false,
+    sortOrder = 4,
+    PlayerSpawn = function(ply)
+        ply:SetHealth(150)
+        ply:SetMaxHealth(150)
+        ply:SetArmor(0)
+        ply:SetMaxArmor(0)
+    end,
+})
+
+
+
+-- Fleet jobs for update here ------------------------------------------------------------------------------------------------------------
+
+
 CIS_B1 = DarkRP.createJob("CIS B1 Droid", {
     color = Color(195, 9, 9),
     model = "models/b1_inf/pm_droid_b1_inf_pvt.mdl",
