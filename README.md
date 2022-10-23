@@ -3,7 +3,7 @@
 Currently on Update 1 - Heavy Update
 
 
-Currently Working on Update 2 - Fleet Update.
+Currently Working on Update 2 - Passive RP update
 
 Current change notes; (updated regularly)
 
@@ -31,13 +31,4 @@ Added ATRT's to 501st Heavy NCO+
 
 -- Army Command --
 
-Changed Battalion Generals to Marshal Commanders
 
-Changed Supreme General to Battalion General
-
-
--- Navy --
-
-Begun the baseline for Fleet jobs
-
-Added Fleet category
