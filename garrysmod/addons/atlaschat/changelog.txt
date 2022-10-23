@@ -1,0 +1,2 @@
++ Fixed decals/rendershadow exploit.
++ Fixed an issue with mysql settings not updating with the in-game panel. ( Credit to https://www.gmodstore.com/users/76561197999488381 )
