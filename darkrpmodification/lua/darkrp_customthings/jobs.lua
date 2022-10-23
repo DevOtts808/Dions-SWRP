@@ -1074,13 +1074,13 @@ CG_CO = DarkRP.createJob("CG Commander Fox", {
     end,
 })
 
-AC_BG = DarkRP.createJob("Battalion General", {
+AC_MCO = DarkRP.createJob("Marshal Commander", {
     color = Color(75, 0, 0),
     model = {
         "models/aussiwozzi/cgi/base/rhc_2.mdl",
     },
     description = [[
-        A Battalion General, assigned to specific regiments to oversee and assist their command.
+        A Marshal Commander, assigned to specific regiments to oversee and assist their command.
     ]],
     weapons = {
         "keys",
@@ -1095,7 +1095,7 @@ AC_BG = DarkRP.createJob("Battalion General", {
         "rw_sw_westarm5",
         "alydus_fortificationbuildertablet"
     },
-    command = "BG",
+    command = "MCO",
     max = 2,
     salary = 120,
     admin = 0,
@@ -1105,20 +1105,20 @@ AC_BG = DarkRP.createJob("Battalion General", {
     canDemote = false,
     sortOrder = 1,
     PlayerSpawn = function(ply)
-        ply:SetHealth(400)
-        ply:SetMaxHealth(400)
-        ply:SetArmor(200)
-        ply:SetMaxArmor(200)
+        ply:SetHealth(350)
+        ply:SetMaxHealth(350)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
     end,
 })
 
-AC_SG = DarkRP.createJob("Supreme General", {
+AC_BG = DarkRP.createJob("Battalion General", {
     color = Color(75, 0, 0),
     model = {
         "models/aussiwozzi/cgi/base/rhc_1.mdl", 
     },
     description = [[
-        The supreme General, Overseer of army command and operations.
+        Battalion General, Overseer of army command and operations.
     ]],
     weapons = {
         "keys",
@@ -1134,7 +1134,7 @@ AC_SG = DarkRP.createJob("Supreme General", {
         "rw_sw_rt97c",
         "alydus_fortificationbuildertablet"
     },
-    command = "SG",
+    command = "BG",
     max = 1,
     salary = 130,
     admin = 0,
@@ -1146,10 +1146,11 @@ AC_SG = DarkRP.createJob("Supreme General", {
     PlayerSpawn = function(ply)
         ply:SetHealth(400)
         ply:SetMaxHealth(400)
-        ply:SetArmor(200)
-        ply:SetMaxArmor(200)
+        ply:SetArmor(150)
+        ply:SetMaxArmor(150)
     end,
 })
+
 
 -- Fleet jobs for update here ------------------------------------------------------------------------------------------------------------
 
