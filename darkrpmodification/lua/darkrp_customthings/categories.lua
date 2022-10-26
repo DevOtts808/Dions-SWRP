@@ -57,10 +57,10 @@ DarkRP.createCategory {
     sortOrder = 7,
 }
 DarkRP.createCategory {
-    name = "Fleet",
+    name = "Criminals",
     categorises = "jobs",
-    startExpanded = true,
-    color = Color(25, 25, 112),
+    startExpanded = false,
+    color = Color(195, 9, 9),
     sortOrder = 8,
 }
 DarkRP.createCategory {
@@ -98,5 +98,15 @@ DarkRP.createCategory {
     sortOrder = 3,
     canSee = function(ply) 
          return table.HasValue({_501ST_JET, _501ST_JETOF}, ply:Team()) 
+    end,
+}
+DarkRP.createCategory {
+    name = "Drugs",
+    categorises = "entities",
+    startExpanded = true,
+    color = Color(250, 0, 0),
+    sortOrder = 4,
+    canSee = function(ply) 
+         return table.HasValue({CRIM_DRUG}, ply:Team()) 
     end,
 }

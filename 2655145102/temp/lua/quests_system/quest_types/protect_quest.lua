@@ -15,7 +15,7 @@ Aura_Quest.QuestTypes["Protect Quest"] =
 	rewards = 
 	{
 		money = 1500, -- Default DarkRP money
-		wiltosXP = 1000, -- XP for wiltOS
+		wiltosXP = 0, -- XP for wiltOS
 	},
 	-- If you want to add custom rewards in this 
 	customRewardFunction = function(self, ply)
@@ -39,9 +39,9 @@ Aura_Quest.QuestTypes["Protect Quest"] =
 		{
 			title = -- What appears at the top of the text box when it opens as the NPCs dialogue
 			{
-				"Ah, so you must be the help I sent for!",
-				"Hey, I could really use your help right now",
-				"AGHHHHH! Save me! Please! AHHHHHHHHH!",
+				"Finally, my backup!",
+				"Hey, I thought you clones worked fast!",
+				"Took you long enough! Help me!",
 			},
 			options = -- A list of options to choose from in the dialogue box
 			{
@@ -81,9 +81,9 @@ Aura_Quest.QuestTypes["Protect Quest"] =
 			title = -- What appears at the top of the text box when it opens as the NPCs dialogue
 			{
 				"Thank you for aiding me in this fight!",
-				"Couldn't have done it without you, thanks!",
+				"Couldn't have done it without you.",
 				"Nice work out there!",
-				"You sure saved my hide!",
+				"You sure saved my ass...",
 			},
 			options = -- A list of options to choose from in the dialogue box
 			{
@@ -117,12 +117,12 @@ Aura_Quest.QuestTypes["Protect Quest"] =
 					{
 						title =
 						{
-							"Ah, you see, I was surrounded by a sense of dread, and realized I was going to be ambushed, thankfully you accepted my request for help and saved me!"
+							"What, you never been caught in an ambush before?"
 						},
 						options = 
 						{
 							{
-								text = {"Oh, okay"},
+								text = {"Fair enough"},
 								serverFunc = [[]], -- An example of nothing special happening when you click the button (Besides closing the dialogue box if you set it to)
 								closeMenu = true, -- Close the menu after this is clicked
 							}
@@ -163,41 +163,44 @@ Aura_Quest.QuestTypes["Protect Quest"] =
 		["Protection Targets"] =
 		{
 			{
-				["Name"] = "Priest",
-				["Class"] = "npc_monk",
-				["Health"] = 100,
+				["Name"] = "Republic Navy officer",
+				["Class"] = "npc_zombie",
+				["Health"] = 250,
 				["Scale"] = 1,
-				["Weapon"] = "weapon_ar2",
+				["Weapon"] = "rw_sw_dc15s",
+				["Weapon"] = "rw_sw_dc15s",
 			},
 		},
 		["Hostile Entities"] = -- A list of potential enemies to spawn at each hostile node (THIS MUST MATCH secondaryEntType)
 		{
 			{
-				["Name"] = "Sliced Zombie",
+				["Name"] = "B1 Battle Droid",
 				["Class"] = "npc_zombie_torso",
 				["Health"] = 100,
 				["Scale"] = 1,
 			},
 			{
-				["Name"] = "Sand Burrower",
+				["Name"] = "BX Commando Droid",
 				["Class"] = "npc_antlion",
 				["Health"] = 100,
 				["Scale"] = 1,
+				["Weapon"] = "rw_sw_dc15s",
 			},
 			{
-				["Name"] = "Undead",
+				["Name"] = "B2 Super Battle Droid",
 				["Class"] = "npc_zombie",
 				["Health"] = 100,
 				["Scale"] = 1,
+				["Weapon"] = "rw_sw_dc15s",
 			},
 		},
 	},
 	
 	editableValues = -- Any custom values you want to be editable in the story quest menu
 	{
-		["Protection Time"] = 15, -- The amount of time enemies will spawn for, so if the wave count is 3 and the time is 15, there will be a wave every 5 seconds (15/3)
-		["Spawn Number"] = 3, -- The number of hostile entities to spawn every "wave" (this number is multiplied by Aura_Quest.DifficultySpawnNumberMult)
-		["Waves"] = 2, -- The total number of waves to spawn
+		["Protection Time"] = 90, -- The amount of time enemies will spawn for, so if the wave count is 3 and the time is 15, there will be a wave every 5 seconds (15/3)
+		["Spawn Number"] = 10, -- The number of hostile entities to spawn every "wave" (this number is multiplied by Aura_Quest.DifficultySpawnNumberMult)
+		["Waves"] = 3, -- The total number of waves to spawn
 	}
 }
 

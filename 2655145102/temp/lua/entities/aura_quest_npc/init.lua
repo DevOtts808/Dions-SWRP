@@ -16,7 +16,7 @@ end
 
 
 function ENT:Initialize()
-    self:SetNPCModel(Aura_Quest.NPCModel or "models/odessa.mdl")
+    self:SetNPCModel(Aura_Quest.NPCModel or "models/jajoff/sps/republic/tc13j/rsb01.mdl")
     self:SetHullType( HULL_HUMAN )
     self:SetHullSizeNormal()
     self:SetSolid( SOLID_BBOX )

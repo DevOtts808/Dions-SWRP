@@ -1076,9 +1076,7 @@ CG_CO = DarkRP.createJob("CG Commander Fox", {
 
 AC_BG = DarkRP.createJob("Marshal Commander", {
     color = Color(75, 0, 0),
-    model = {
-        "models/aussiwozzi/cgi/base/rhc_2.mdl",
-    },
+    model = "models/aussiwozzi/cgi/base/rhc_2.mdl",
     description = [[
         A Marshal Commander, assigned to specific regiments to oversee and assist their command.
     ]],
@@ -1114,9 +1112,7 @@ AC_BG = DarkRP.createJob("Marshal Commander", {
 
 AC_SG = DarkRP.createJob("Battalion General", {
     color = Color(75, 0, 0),
-    model = {
-        "models/aussiwozzi/cgi/base/rhc_1.mdl", 
-    },
+    model = "models/aussiwozzi/cgi/base/rhc_1.mdl", 
     description = [[
         Battalion General, Overseer of army command and operations.
     ]],
@@ -1151,153 +1147,143 @@ AC_SG = DarkRP.createJob("Battalion General", {
     end,
 })
 
-
--- Fleet jobs for update here ------------------------------------------------------------------------------------------------------------
-
-FLT_ = DarkRP.createJob("Fleet 1", {
-    color = Color(25, 25, 112),
-    model = {
-        "models/jajoff/sps/republic/tc13j/navy_02.mdl", 
-    },
+CRIM_SCAV = DarkRP.createJob("Scavenger", {
+    color = Color(75, 0, 0),
+    model = "models/player/guerilla.mdl", 
     description = [[
-        First fleet rank.
+        A native scavenger, most of which are against the republic's new occupation. You may do whatever you please as a scavenger, however if you're feeling daring, you may steal from, raid and sabotage the republic base at your will.
     ]],
     weapons = {
-
+        "keys"
     },
-    command = "Fleet1",
-    max = 1,
-    salary = 70,
+    command = "SCAV",
+    max = 4,
+    salary = 10,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Criminals",
     canDemote = false,
     sortOrder = 1,
     PlayerSpawn = function(ply)
-        ply:SetHealth(150)
-        ply:SetMaxHealth(150)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
         ply:SetArmor(0)
         ply:SetMaxArmor(0)
     end,
 })
 
-FLT_ = DarkRP.createJob("Fleet 2", {
-    color = Color(25, 25, 112),
-    model = {
-        "models/jajoff/sps/republic/tc13j/navy_01.mdl", 
-    },
+CRIM_DRUG = DarkRP.createJob("Drug Dealer", {
+    color = Color(75, 0, 0),
+    model = "models/player/Group02/male_06.mdl", 
     description = [[
-        Second fleet rank.
+        A daring drug dealer who somehow thinks they can get their products through to the battle-bred republic clone troopers. It's a dangerous game, but you can't get into any trouble if you aren't caught...
     ]],
     weapons = {
-
+        "keys"
     },
-    command = "Fleet2",
-    max = 1,
-    salary = 70,
+    command = "DRUG",
+    max = 2,
+    salary = 10,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Criminals",
     canDemote = false,
     sortOrder = 2,
     PlayerSpawn = function(ply)
-        ply:SetHealth(150)
-        ply:SetMaxHealth(150)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
         ply:SetArmor(0)
         ply:SetMaxArmor(0)
     end,
 })
 
-FLT_ = DarkRP.createJob("Fleet 3", {
-    color = Color(25, 25, 112),
+CRIM_BOUNTY = DarkRP.createJob("Bounty Hunter", {
+    color = Color(75, 0, 0),
     model = {
-        "models/jajoff/sps/republic/tc13j/navy_03.mdl", 
+        "models/dw_sgt/pm_deathwatch_maul_sgt.mdl",
+        "models/dw_huntress/pm_deathwatch_maul_huntress.mdl" 
     },
     description = [[
-        Third fleet rank.
+        Bounty hunting in military occupied sectors can be lucrative, but dangerous. Shoot to kill and make the shot count.
     ]],
     weapons = {
-
+        "keys",
+        "rw_sw_dual_westar34",
+        "cloaking-3",
+        "realistic_hook",
+        "rw_sw_tusken_cycler"
     },
-    command = "Fleet3",
+    command = "BH",
     max = 1,
-    salary = 70,
+    salary = 10,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Criminals",
     canDemote = false,
     sortOrder = 3,
     PlayerSpawn = function(ply)
-        ply:SetHealth(150)
-        ply:SetMaxHealth(150)
-        ply:SetArmor(0)
-        ply:SetMaxArmor(0)
+        ply:SetHealth(250)
+        ply:SetMaxHealth(250)
+        ply:SetArmor(100)
+        ply:SetMaxArmor(100)
     end,
 })
 
-FLT_ = DarkRP.createJob("Fleet 4", {
-    color = Color(25, 25, 112),
-    model = {
-        "models/jajoff/sps/republic/tc13j/navy_04.mdl", 
-    },
+OTHER_BARTENDER = DarkRP.createJob("Bartender", {
+    color = Color(75, 0, 0),
+    model = "models/player/monk.mdl",
     description = [[
-        Fourth fleet rank.
+        Tend to the bar.
     ]],
     weapons = {
-
+        "keys"
     },
-    command = "Fleet4",
+    command = "BAR",
     max = 1,
-    salary = 70,
+    salary = 10,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Criminals",
     canDemote = false,
     sortOrder = 4,
     PlayerSpawn = function(ply)
-        ply:SetHealth(150)
-        ply:SetMaxHealth(150)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
         ply:SetArmor(0)
         ply:SetMaxArmor(0)
     end,
 })
 
-FLT_ = DarkRP.createJob("Fleet 5", {
-    color = Color(25, 25, 112),
-    model = {
-        "models/jajoff/sps/republic/tc13j/army_03.mdl", 
-    },
+OTHER_JANITOR = DarkRP.createJob("Republic Janitor", {
+    color = Color(75, 0, 0),
+    model = "models/player/clone engineer/ccgi engineer.mdl",
     description = [[
-        Fifth fleet rank.
+        Someone gotta do it or it wont get done.
     ]],
     weapons = {
-
+        "keys",
+        "weapon_cbroom"
     },
-    command = "Fleet5",
-    max = 1,
-    salary = 70,
+    command = "JANITOR",
+    max = 2,
+    salary = 10,
     admin = 0,
     vote = false,
     hasLicense = false,
-    category = "Fleet",
+    category = "Criminals",
     canDemote = false,
-    sortOrder = 4,
+    sortOrder = 5,
     PlayerSpawn = function(ply)
-        ply:SetHealth(150)
-        ply:SetMaxHealth(150)
+        ply:SetHealth(100)
+        ply:SetMaxHealth(100)
         ply:SetArmor(0)
         ply:SetMaxArmor(0)
     end,
 })
-
-
-
--- Fleet jobs for update here ------------------------------------------------------------------------------------------------------------
-
 
 CIS_B1 = DarkRP.createJob("CIS B1 Droid", {
     color = Color(195, 9, 9),
